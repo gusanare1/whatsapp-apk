@@ -1,8 +1,8 @@
 # -*- coding: latin-1 -*-
 desired_caps = {}
 desired_caps['platformName'] = 'Android'
-desired_caps['platformVersion'] = '6.0'
-desired_caps['deviceName'] = '$ 42009ef7c410b37b'
+desired_caps['platformVersion'] = '4.0.4'
+desired_caps['deviceName'] = '$ device'
 desired_caps['noReset'] = True
 desired_caps['fullReset'] = False
 
@@ -12,7 +12,7 @@ NUMERO_CONTACTOS = 7
 PRIMER_CONTACTO = "Anahi"
 NUM_POSTAL = "+593"
 IP_APPIUM = 'http://localhost:4723/wd/hub'
-IP = "192.168.0.1"
+IP = "192.168.0.6"
 
 import socket
 import urllib

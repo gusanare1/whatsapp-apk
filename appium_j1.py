@@ -1,23 +1,25 @@
 # -*- coding: latin-1 -*-
-'''
-ACTUALIZR IP******
-para abrir uiautomatorviewer:
-	cmd
-	adb devices
-	uiautomatorviewer
-		cd C:\Users\lenov\AppData\Local\Android\Sdk\tools\bin
-		uiautomatorviewer.bat
 
-ABRIR APPIUM
-	no en modo server
-	se abre la apk
+#ACTUALIZR IP******
+#para abrir uiautomatorviewer:
+#	cmd
+#	adb devices
+#	uiautomatorviewer
+#		cd C:\Users\lenov\AppData\Local\Android\Sdk\tools\bin
+#		uiautomatorviewer.bat
+#
+#ABRIR APPIUM
+#	no en modo server
+#	se abre la apk
+#
+#CAMBIAR 099... POR 59399...	
+#ABRIR FLASK
+#cmd
+#cd Documents
+#python fla.py
 
-CAMBIAR 099... POR 59399...	
-ABRIR FLASK
-cmd
-cd Documents
-python fla.py
-'''
+
+
 import constants_j1 as constants
 from funcion import actualizar, enviar_foto, sleep, tiempo
 import saludos
@@ -42,7 +44,7 @@ NUM_POSTAL = constants.NUM_POSTAL
 
 print("Tengo "+str(TOTAL)+" contactos y me envian "+str(MAXIMO_CONTACTOS)+" contactos")
 fin_rango = int(math.ceil(float(TOTAL) / float(MAXIMO_CONTACTOS)))
-print "Numero de veces que se va a correr: "+str(fin_rango)
+print("Numero de veces que se va a correr: "+str(fin_rango))
 
 
 flag_once_apk = True
@@ -128,7 +130,7 @@ for i in range(0,fin_rango):
 			for i in range(0,len(arr)):
 				elem = arr[i].text
 				if PRIMER_CONTACTO in elem:
-					print "ENCONTRAD EL PRIMER CONTACTO"
+					print("ENCONTRAD EL PRIMER CONTACTO")
 					flag_while = False
 				elif NUM_POSTAL in elem:
 					if elem not in array_nombre:
@@ -158,7 +160,7 @@ for i in range(0,fin_rango):
 	driver = webdriver.Remote(IP_APPIUM, desired_caps)
 	tiempo("Abiendo APK",starting_point)
 	wait = WebDriverWait(driver, TIEMPO_ACTUALIZAR)
-	print "Click en borrar"
+	print("Click en borrar")
 	sleep(TIEMPO_ESPERA)
 	xpath = "//android.widget.Button[contains(@resource-id,'com.example.lenov.addcontacto:id/borrar')]"
 	wait_for = wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
@@ -169,7 +171,7 @@ for i in range(0,fin_rango):
 	flag_once_whatsapp = True
 	tiempo("Cerrando Apk",starting_point)
 	
-print "FIN"
+print("FIN")
 
 tiempo("Total",starting_point)
 sleep(TIEMPO_ESPERA)

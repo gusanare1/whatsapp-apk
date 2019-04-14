@@ -60,7 +60,7 @@ def data():
 				if(i==MAX):
 					break;
 			lines = lines[:-1]
-	print lines
+	print(lines)
 	return lines
 	
 
@@ -105,7 +105,7 @@ def remo():
 						
 			lines_ = lines[:-1].split(';')[-SIZE:]
 			lines = ';'.join(str(x) for x in lines_)
-	print lines
+	print(lines)
 	return lines
 
 	
@@ -124,7 +124,7 @@ def todos():
 			if(i==MAX):
 				break;
 		lines = lines[:-1]
-	print lines
+	print(lines)
 	return lines
 
 	

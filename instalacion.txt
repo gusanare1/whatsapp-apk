@@ -1,0 +1,19 @@
+1. Download the latest Appium (https://github.com/appium/appium-desktop/releases/latest)
+I have used appium-desktop-Setup-1.5.0-ia32.exe. You can run the exe to install the appium desktop app
+
+2. Download and Install Android Studio(https://developer.android.com/studio/index.html)
+Once you install Android Studio make sure the AVD Manager is also installed as we are going to run our tests on an emulator. Set ANDROID_HOME to be your Android SDK path and add the tools and platform-tools folders to your PATH variable. I could find the Android SDK installed on the below-mentioned path
+$\AppData\Local\Android\Sdk
+
+3. Install the Java JDK
+Set JAVA_HOME to your JDK folder
+
+4. Install the Python client library
+There are client libraries (in Java, Ruby, Python, PHP, JavaScript, and C#) which support Appium’s extensions to the WebDriver protocol. When using Appium, you want to use these client libraries instead of your regular WebDriver client. I have used the Appium Python client available here. Assuming you have pip installed on your machine, you can use the following command to install it
+
+python pip install Appium-Python-Client
+
+INSTALAR PAQUETES DEPENDANCY 
+python3 -m pip install -r requirements.txt
+
+subir servicio flask
