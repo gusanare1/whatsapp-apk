@@ -8,7 +8,7 @@ desired_caps['fullReset'] = False
 
 TIEMPO_ACTUALIZAR = 120
 TIEMPO_ESPERA = 0.1
-NUMERO_CONTACTOS = 7
+#NUMERO_CONTACTOS = 7
 PRIMER_CONTACTO = "Anahi"
 NUM_POSTAL = "+593"
 IP_APPIUM = 'http://localhost:4723/wd/hub'
