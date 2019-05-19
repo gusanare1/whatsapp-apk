@@ -1,5 +1,5 @@
 # whatsapp-apk
-Poner el PATH de java (para Android Studio y Appium), descargar Android Studio y SDK de android. Luego poner path de Sdk de android (File->Setting->Appariencia|Setting ->SDK).
+Poner el PATH de java (para Android Studio y Appium), descargar Android Studio y SDK de android. Luego poner path de Sdk de android (File->Setting->Appariencia|Setting ->SDK).<br/>
 Instalar python2 y sus dependencias (Appium-client selenium y flask)
 Poner path de python
 El telefono debe ser mayor a 5.0 Android
