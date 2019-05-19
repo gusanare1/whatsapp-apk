@@ -9,15 +9,12 @@ CAMBIAR LAS CONFIGURACIONES DEL SCRIPT (EN CONSTANTS***.PY)<br/>
     *****<br/>
     desired_caps['platformVersion'] = '7.1.2'<br/>
 desired_caps['deviceName'] = '$ ADB DEVICES'<br/>
-desired_caps['noReset'] = True<br/>
-desired_caps['fullReset'] = False<br/>
 <br/>
 TIEMPO_ACTUALIZAR = 120<br/>
 TIEMPO_ESPERA = 0.1<br/>
 NUMERO_CONTACTOS = 7<br/>
 PRIMER_CONTACTO = "Anahi" #CREAR PRIMER CONTACTO<br/>
 NUM_POSTAL = "+593"<br/>
-IP_APPIUM = 'http://localhost:4723/wd/hub'<br/>
 IP = "192.168.1.4"<br/>
 
  DESCOMENTAR AAPPIUM_J1 "ADD CONTACT"<br/>
