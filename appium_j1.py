@@ -54,10 +54,10 @@ import time
 starting_point = time.time()
 
 for i in range(0,fin_rango):
-	'''
+	
 	#***********************ABRIR APK ADDCONTACTO*****************************
-	desired_caps['appPackage'] = 'com.example.lenov.addcontacto'
-	desired_caps['appActivity'] = '.gus.MainActivity'
+	desired_caps['appPackage'] = 'com.example.lenov.addcontacto' #SACAR DEL MANIFEST.XML->PACKAGE
+	desired_caps['appActivity'] = '.gus.MainActivity' #SACAR DE MANIFEST->MAIN_ACTIVITY
 	driver = webdriver.Remote(IP_APPIUM, desired_caps)
 	wait = WebDriverWait(driver, TIEMPO_ACTUALIZAR)
 	tiempo("Abriendo APK",starting_point)
@@ -86,7 +86,7 @@ for i in range(0,fin_rango):
 	sleep(TIEMPO_ESPERA)
 	driver.close_app()	
 	tiempo("Cerrando APK",starting_point)
-	'''
+	
 	#***********************ABRIR WHATSAPP*****************************
 	try:
 		print ("Tratando de entrar con HomeActivity")
