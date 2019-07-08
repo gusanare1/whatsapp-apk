@@ -1,5 +1,6 @@
 # whatsapp-apk
 Aplicacion que guarda contactos en la libreta android, para uso posterior.
+En uso con (Python) (See other repo)
 
 Poner el PATH de java (para Android Studio y Appium), descargar Android Studio y SDK de android. Luego poner path de Sdk de android (File->Setting->Appariencia|Setting ->SDK).<br/>
 Instalar python2 y sus dependencias (Appium-client selenium y flask)<br/>
